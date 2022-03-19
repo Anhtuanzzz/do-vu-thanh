@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đỗ Vũ Thành</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome-->
+    <script src="https://use.fontawesome.com/9e262a5688.js"></script>
+    <!-- Script -->
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('.work').hide();
+            $('.contact').hide();
+            $('#about').click(() => {
+                $('.about').fadeIn();
+                $('.work').hide();
+                $('.contact').hide();
+                $('body').css('background-image', 'url("public/img/bg.jpeg")');
+                $('header').css('color', 'white');
+                $('.head').text('Portfolio');
+            });
+            $('#work').click(() => {
+                $('.about').hide();
+                $('.contact').hide();
+                $('.work').fadeIn();
+                $('body').css('background-image', 'none');
+                $('header').css('color', 'black');
+                $('.head').text('Sản phẩm');
+            });
+            $('#contact').click(() => {
+                $('.about').hide();
+                $('.work').hide();
+                $('.contact').fadeIn();
+                $('body').css('background-image', 'none');
+                $('header').css('color', 'black');
+                $('.head').text('Liên hệ');
+            });
+        });
+
+        function copy(text) {
+        navigator.clipboard.writeText(text);
+        alert(text);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <p class="head">Portfolio</p>
+        <nav>
+            <ul>
+                <li id="about">ABOUT</li>
+                <li id="work">WORK</li>
+                <li id="contact">CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="about">
+        <div class="main">
+            <div class="text">
+                <h1>Đỗ Vũ</h1>
+                <h1>Thành</h1>
+            </div>  
+        </div>
+        <footer>
+            <p id="describe">Enthusiastic game creator</p>
+            <button id="email">My CV</button>
+        </footer>
+    </div>
+    <div class="work">
+        <div class="projects">
+            <video controls>
+                <source src="public/vid/vid1.mp4#t=0.1" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="project">
+                <h1>Trailer cuộc thi ảnh: </h1>
+                <p>The Quick Brown Fox Jumps Over the Lazy Dog</p>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="project">
+                <h1>Video Tết: </h1>
+                <p>The Quick Brown Fox Jumps Over the Lazy Dog</p>
+            </div>
+            <video controls>
+                <source src="public/vid/vid2.mp4#t=0.1" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="projects">
+            <video controls>
+                <source src="public/vid/vid3.mp4#t=0.1" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="project">
+                <h1>YouTube: </h1>
+                <p>The Quick Brown Fox Jumps Over the Lazy Dog</p>
+            </div>
+        </div>
+        <div class="projects">
+            <a href="#work">To top</a>
+        </div>
+    </div>
+    <div class="contact">
+        <p>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            38 Louis 2, Louis City, Đại Mỗ, Nam Từ Liêm
+        </p>
+        <p>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            Mobile: 0397384094
+        </p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            Email:
+            <ul>
+                <li>krackhet188@gmail.com <button onclick="copy('krackhet188@gmail.com')">Copy</button></li>
+                <li>dvthanh188@gmail.com <button onclick="copy('dvthanh188@gmail.com')">Copy</button></li>
+                <li>dvthanh1882003@gmail.com <button onclick="copy('dvthanh1882003@gmail.com')">Copy</button></li>
+            </ul>
+        </p>
+        <p>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            Facebook: https://www.facebook.com/S4T3R.SkaDi
+        </p>
+        <p>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            YouTube: https://www.youtube.com/channel/UCwUdLqrTVvx0Z1bjNL_iXWQ
+        </p>
+    </div>
+</body>
+</html>

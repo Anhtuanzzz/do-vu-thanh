@@ -1,0 +1,136 @@
+body {
+    font-family: 'Montserrat', sans-serif;   
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    background-image: url("public/img/bg.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 1px;
+    text-shadow: 2px 2px 2px rgba(206,89,55,0);    ;
+}
+
+header {
+    display: block;
+    width: 90vw;
+    padding-bottom: 10vh;
+}
+
+header p {
+    float: left;
+}
+
+header ul {
+    list-style-type: none;
+    float: right;
+}
+
+header li {
+    display: inline;
+    padding: 5px;
+    cursor: pointer;
+}
+
+header li:hover {
+    color: rgb(51, 54, 58);
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 85vh;
+}
+
+.main h1 {
+    font-family: "Merriweather", sans-serif;
+    font-size: 15vh;
+    margin: 0;
+    opacity: 80%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 95vw;
+}
+
+footer #describe {
+    float: left;
+}
+
+footer #email {
+    color: inherit;
+    float: right;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    opacity: 75%;
+    padding: 5px;
+}
+
+footer #email:hover {
+    opacity: 90%;
+}
+
+.work {
+    color: black;
+    align-items: center;
+}
+
+.work img {
+    width: 75vh;
+    height: 75vh;
+    object-fit: cover;
+}
+
+video {
+    width: 85vh;
+}
+
+.projects {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.project {
+    font-size: 22px;
+    padding: 20px;
+}
+
+.contact {
+    padding: 25px;
+    font-size: 20px;
+    color: black;
+}
+
+/* Scroll bar */
+
+/* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d8d6d6;
+    border-radius: 15px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(116, 113, 113); 
+  }
