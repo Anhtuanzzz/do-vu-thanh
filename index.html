@@ -24,13 +24,13 @@
                 $('.contact').hide();
                 $('body').css('background-image', 'url("public/img/bg.jpeg")');
                 $('header').css('color', 'white');
-                $('.head').text('Portfolio');
+                $('.head').text('');
             });
             $('#work').click(() => {
                 $('.about').hide();
                 $('.contact').hide();
                 $('.work').fadeIn();
-                $('body').css('background-image', 'none');
+                $('body').css('background-image', 'url("public/img/project-bg.jpg")');
                 $('header').css('color', 'black');
                 $('.head').text('Sản phẩm');
             });
@@ -40,19 +40,18 @@
                 $('.contact').fadeIn();
                 $('body').css('background-image', 'none');
                 $('header').css('color', 'black');
-                $('.head').text('Liên hệ');
+                $('.head').text('');
             });
         });
 
         function copy(text) {
-        navigator.clipboard.writeText(text);
-        alert(text);
+            navigator.clipboard.writeText(text);
         }
     </script>
 </head>
 <body>
     <header>
-        <p class="head">Portfolio</p>
+        <p class="head"></p>
         <nav>
             <ul>
                 <li id="about">ABOUT</li>
@@ -70,7 +69,12 @@
         </div>
         <footer>
             <p id="describe">Enthusiastic game creator</p>
-            <button id="email">My CV</button>
+            <a href="public/cv/Đỗ Vũ Thành CV.pdf" download="Đỗ Vũ Thành CV">
+                <button id="email">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    My CV
+                </button>
+            </a>
         </footer>
     </div>
     <div class="work">
@@ -79,15 +83,29 @@
                 <source src="public/vid/vid1.mp4#t=0.1" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-            <div class="project">
+            <div class="project" id="project-one">
                 <h1>Trailer cuộc thi ảnh: </h1>
-                <p>The Quick Brown Fox Jumps Over the Lazy Dog</p>
+                <p>
+                    Sản phẩm đầu tiên mà mình bỏ rất nhiều thời gian và công sức ra để hoàn thành. 
+                    Mình khá là tự hào về kết quả cuối cùng vì trình độ của mình lúc đó chưa phải cao siêu.
+                </p>
+                <a href="https://www.facebook.com/CNH.TOP/videos/213440546744077/" target="_blank">
+                    View
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
         <div class="projects">
-            <div class="project">
+            <div class="project" id="project-two">
                 <h1>Video Tết: </h1>
-                <p>The Quick Brown Fox Jumps Over the Lazy Dog</p>
+                <p>
+                    Sản phẩm này không chỉ nặng về phần hình ảnh, quay, edit 
+                    mà còn có cả yếu tố âm nhạc nữa vậy nên việc hoàn thành video này cũng rất mất công nhưng rất mãn nguyện.
+                </p>
+                <a href="https://www.facebook.com/cnttkts/videos/302821511869191/" target="_blank">
+                    View
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
             </div>
             <video controls>
                 <source src="public/vid/vid2.mp4#t=0.1" type="video/mp4">
@@ -99,9 +117,16 @@
                 <source src="public/vid/vid3.mp4#t=0.1" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-            <div class="project">
+            <div class="project" id="project-three">
                 <h1>YouTube: </h1>
-                <p>The Quick Brown Fox Jumps Over the Lazy Dog</p>
+                <p>
+                    Ngoài video này ra trên kênh còn rất nhiều những sản phẩm khác để mọi người có thể lên xem và tận hưởng. 
+                    Hi vọng những clips đó sẽ mang tới cho mọi người những tiếng cười và thời gian thoải mái.
+                </p>
+                <a href="https://www.youtube.com/results?search_query=krackhet" target="_blank">
+                    View
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
         <div class="projects">
@@ -128,11 +153,11 @@
         </p>
         <p>
             <i class="fa fa-facebook-official" aria-hidden="true"></i>
-            Facebook: https://www.facebook.com/S4T3R.SkaDi
+            Facebook: <a href="https://www.facebook.com/S4T3R.SkaDi" target="_blank">Đỗ Vũ Thành</a>
         </p>
         <p>
             <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            YouTube: https://www.youtube.com/channel/UCwUdLqrTVvx0Z1bjNL_iXWQ
+            YouTube: <a href="https://www.youtube.com/channel/UCwUdLqrTVvx0Z1bjNL_iXWQ" target="_blank">Krackhet</a>
         </p>
     </div>
 </body>
